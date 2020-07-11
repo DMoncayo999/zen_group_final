@@ -1,0 +1,260 @@
+@import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans&display=swap);
+/*---------- Fonts --------*/
+/*---------- Colors ---------*/
+/* images */
+h1, h2 {
+  margin: 0;
+  color: #012441;
+  font-weight: normal;
+}
+
+h1 {
+  padding-top: 20%;
+  padding-bottom: 5px;
+  font-family: "Kaushan Script", cursive;
+  font-size: 2.5em;
+}
+
+h2 {
+  display: block;
+  padding-bottom: 30px;
+  font-size: 1.6em;
+  font-style: italic;
+}
+
+h3 {
+  margin: 2em 0 0 0;
+  color: #2e484c;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.8em;
+  font-weight: normal;
+}
+
+p {
+  margin: 0.75em 0;
+  line-height: 2;
+}
+
+@media only screen and (min-width: 320px) {
+  body {
+    color: black;
+    background-color: rgba(11, 138, 252, 0.702);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 500px) {
+  body {
+    color: black;
+    background: rgba(11, 138, 252, 0.702) url(../images/bxGTTaR-bubbling-cartoon-fish-vector.svg) no-repeat fixed bottom right;
+    background-size: 300px 300px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+  }
+
+  .summary, .preamble, .explanation, .participation, .benefits, .requirements {
+    display: flex;
+    flex-flow: column;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lightblue;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    word-wrap: inherit;
+    font-size: 0.7rem;
+    width: 50%;
+    height: 50%;
+  }
+
+  div {
+    transition: transform 2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  div:hover {
+    transform: translate(0px, 20px);
+  }
+
+  .wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+  }
+  .wrapper .design-selection {
+    flex: 2;
+    padding-left: 2%;
+  }
+  .wrapper .design-selection li {
+    color: #b4ac83;
+  }
+  .wrapper .design-archives {
+    flex: 1;
+  }
+  .wrapper .zen-resources {
+    flex: 2;
+  }
+  .wrapper .zen-resources li {
+    color: #b4ac83;
+  }
+}
+@media only screen and (min-width: 800px) {
+  body {
+    color: black;
+    background: rgba(11, 138, 252, 0.702) url(../images/bxGTTaR-bubbling-cartoon-fish-vector.svg) no-repeat fixed bottom right;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+  }
+
+  .summary, .preamble, .explanation, .participation, .benefits, .requirements {
+    display: flex;
+    flex-flow: column;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lightblue;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    word-wrap: inherit;
+    font-size: 0.7rem;
+    width: 50%;
+    height: 50%;
+  }
+
+  div {
+    transition: transform 2s;
+    transition-timing-function: ease-in-out;
+  }
+
+  div:hover {
+    transform: translate(0px, 20px);
+  }
+
+  .wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+  }
+  .wrapper .design-selection {
+    flex: 2;
+    padding-left: 2%;
+  }
+  .wrapper .design-selection li {
+    color: #b4ac83;
+  }
+  .wrapper .design-archives {
+    flex: 1;
+  }
+  .wrapper .zen-resources {
+    flex: 2;
+  }
+  .wrapper .zen-resources li {
+    color: #b4ac83;
+  }
+}
+/* base CSS */
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #0d8ba1;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #012441;
+}
+
+a:hover, a:focus {
+  color: #012441;
+  text-decoration: underline;
+}
+
+abbr {
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.01em;
+}
+
+/*--------- Header -----------*/
+header {
+  animation: sailing 10s ease-in infinite;
+  text-align: left;
+}
+
+@keyframes sailing {
+  0% {
+    background: rgba(11, 138, 252, 0.702) url(../images/yves_guillou_boat.svg) no-repeat 0% 0%;
+  }
+  50% {
+    background: rgba(11, 138, 252, 0.702) url(../images/yves_guillou_boat.svg) no-repeat 50% 50%;
+  }
+  100% {
+    background: rgba(11, 138, 252, 0.702) url(../images/yves_guillou_boat.svg) no-repeat 100% 100%;
+  }
+}
+/*-------- divs and sections ---------*/
+.supporting h3, .supporting p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------- sidebar -----------*/
+.sidebar {
+  background: #012441;
+}
+.sidebar h3 {
+  color: #b4ac83;
+}
+.sidebar a {
+  color: #b4ac83;
+  text-decoration: none;
+}
+.sidebar a:hover, .sidebar a:focus {
+  color: #0b8afc;
+}
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+/* shared sidebar styling */
+.design-selection li:nth-child(2n+1), .zen-resources li:nth-child(2n+1) {
+  clear: left;
+}
+
+.design-selection .design-name, .zen-resources a, li.viewall a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.design-selection .designer-name {
+  color: black;
+  font-size: 0.8rem;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=styles.css.map */

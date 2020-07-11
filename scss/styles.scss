@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans&display=swap);
+
+@import "variables";
+@import "typography";
+@import "media";
+
+/* base CSS */
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #0d8ba1;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  text-decoration: none;
+}
+  a:visited {
+    color: $color-3;
+  }
+  a:hover, a:focus {
+    color: $color-3;
+    text-decoration: underline;
+  }
+abbr {
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.01em;
+}
+
+/*--------- Header -----------*/
+header {
+  // background: $color-1;
+  // background: $color-7 $boat no-repeat;
+  animation: sailing 10s ease-in infinite;
+  text-align: left;
+}
+
+@keyframes sailing {
+  0% {
+    background: $color-7 $boat no-repeat 0% 0%;
+  }
+  50% {
+    background: $color-7 $boat no-repeat 50% 50%;
+  }
+  100% {
+    background: $color-7 $boat no-repeat 100% 100%;
+  }
+}
+/*-------- divs and sections ---------*/
+
+.supporting{
+    h3, p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*--------- sidebar -----------*/
+.sidebar {
+  background: $color-3;
+
+  h3 {
+    color: $color-6;
+  }
+
+  a {
+    color: $color-6;
+    text-decoration: none;
+  }
+
+  a:hover, a:focus {
+    color: $color-1;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+}
+
+
+/* shared sidebar styling */
+
+.design-selection li:nth-child(2n+1), .zen-resources li:nth-child(2n+1) {
+  clear: left;
+}
+
+.design-selection .design-name, .zen-resources a, li.viewall a {
+  font-family: $body-font;
+  font-size: $font-normal;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.design-selection .designer-name {
+  color: $color-2;
+  font-size: $font-normal;
+  font-style: normal;
+}

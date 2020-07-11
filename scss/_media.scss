@@ -1,0 +1,126 @@
+@media only screen and (min-width: 320px) {
+
+    body {
+        color: $color-2;
+        background-color: $color-7;
+        font-family: $body-font;
+        font-size: $font-size;
+      }
+    
+}
+
+
+@media only screen and (min-width: 500px) {
+   
+body {
+    color: $color-2;
+    background: $color-7 $fish no-repeat fixed bottom right;
+    background-size: 300px 300px;
+    font-family: $body-font;
+    font-size: $font-size;
+  }
+  .summary, .preamble, .explanation, .participation, .benefits, .requirements {
+    display: flex;
+    flex-flow: column;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lightblue;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    word-wrap: inherit;
+    font-size: $font-small;
+    width: 50%;
+    height: 50%;
+  }
+  div {
+    transition: transform 2s;
+    transition-timing-function: ease-in-out;
+  }
+  div:hover {
+    transform: translate(+0px, +20px);
+  }
+  
+.wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+  
+    .design-selection {
+      flex: 2;
+      padding-left: 2%;
+       li {
+        color: $color-6;
+       }
+    }
+    .design-archives {
+      flex: 1;
+    }
+    .zen-resources {
+      flex: 2;
+      li {
+        color: $color-6;
+      }
+    }
+    
+  }
+}
+
+
+@media only screen and (min-width: 800px) {
+   
+    body {
+        color: $color-2;
+        background: $color-7 $fish no-repeat fixed bottom right;
+        font-family: $body-font;
+        font-size: $font-size;
+      }
+      .summary, .preamble, .explanation, .participation, .benefits, .requirements {
+        display: flex;
+        flex-flow: column;
+        padding: 5%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: lightblue;
+        border-style: solid;
+        border-color: black;
+        border-radius: 50%;
+        word-wrap: inherit;
+        font-size: $font-small;
+        width: 50%;
+        height: 50%;
+      }
+    div {
+      transition: transform 2s;
+      transition-timing-function: ease-in-out;
+    }
+    div:hover {
+      transform: translate(+0px, +20px);
+    } 
+    .wrapper {
+        display: flex;
+        flex-flow: row;
+        justify-content: left;
+      
+        .design-selection {
+          flex: 2;
+          padding-left: 2%;
+           li {
+            color: $color-6;
+           }
+        }
+        .design-archives {
+          flex: 1;
+        }
+        .zen-resources {
+          flex: 2;
+          li {
+            color: $color-6;
+          }
+        }
+        
+      }
+    }
